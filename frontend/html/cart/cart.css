@@ -1,0 +1,81 @@
+#kosar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#kosar > div{
+    border: 2px solid black;
+    width: fit-content;
+}
+
+.visszagomb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    background-color: #FFEB3B;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+.text-whitesmoke {
+    color: whitesmoke
+}
+
+.login-container {
+    max-width: 500px;
+    z-index: 100;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.login.login-container {
+    width: 300px;
+}
+.wrapper.login-container {
+    margin-top: 140px;
+}
+.text-c {
+    text-align: center;
+}
+
+.form-gomb {
+    background-color: rgba(255, 235, 59, 0.24);
+    border-color: rgba(255, 235, 59, 0.24);
+    color: #e6e6e6;
+}
+.form-gomb:hover,
+.form-gomb:focus,
+.form-gomb:active,
+.form-gomb.active,
+.form-gomb:active:focus,
+.form-gomb:active:hover,
+.form-gomb.active:hover,
+.form-gomb.active:focus {
+    background-color: rgba(255, 235, 59, 0.473);
+    border-color: rgba(255, 235, 59, 0.473);
+    color: #e6e6e6;
+}
+.button-l {
+    width: 100% !important;
+}
+
+.margin-b {
+    margin-bottom: 15px;
+}
+.margin-b-sm {
+    margin-bottom: 10px;
+}
+.margin-b-md {
+    margin-bottom: 20px;
+}
+.margin-b-lg {
+    margin-bottom: 30px;
+}

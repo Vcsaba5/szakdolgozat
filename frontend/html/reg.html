@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="hatter">
+    <div class="login-container text-c ">
+        <div>
+            <h1 class="logo-badge text-whitesmoke"><span class="fa fa-user-circle"></span></h1>
+        </div>
+        <h3 class="text-whitesmoke">Regisztráció</h3>
+        <form id="registerForm" class="margin-t">
+            <div class="container-cont">
+                <div class="form-csoport">
+                    <input type="email" class="form-iranyito" id="registerEmail" placeholder="Email cím">
+                </div>
+                <div class="form-csoport">
+                    <input type="text" class="form-iranyito" id="registerUsername" placeholder="Felhasználónév">
+                </div>
+                <div class="form-csoport">
+                    <input type="password" class="form-iranyito" id="registerPassword" placeholder="Jelszó"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+                    <input type="password" class="form-iranyito" id="registerPassword2" placeholder="Jelszó újra">
+                </div>
+                <button type="submit" class="form-gomb button-l margin-b">Regisztráció</button>
+                <a class="text-darkyellow" onclick="forLogin()"><small>Bejelentkezés</small></a>
+            </div>
+            <div id="message" class="mt-5">
+                <h3>A jelszónak a következőket kell tartalmaznia:</h3>
+                <p id="letter" class="invalid">Egy <b>kisbetű</b></p>
+                <p id="capital" class="invalid">Egy <b>nagybetű</b></p>
+                <p id="number" class="invalid">Egy <b>szám</b></p>
+                <p id="length" class="invalid">Minimum <b>8 karakter</b></p>
+            </div>
+    </div>
+    </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+
+</html>

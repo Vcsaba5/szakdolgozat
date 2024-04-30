@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+</head>
+
+<body class="hatter">
+    <div class="login-container text-c animated flipInX" id="login">
+        <div>
+            <h1>
+                <img src="images\logo.png">
+            </h1>
+        </div>
+        <h3 class="text-whitesmoke">Airsoft Arsenal</h3>
+        <div class="container-tartalom">
+        <form id="loginForm" class=" margin-t">
+                <div class="form-csoport">
+                    <input type="email" class="form-iranyito" id="loginEmail" placeholder="Email cím" required="">
+                </div>
+                <div class="form-csoport">
+                    <input type="password" class="form-iranyito" id="loginPassword" placeholder="Jelszó" required="">
+                </div>
+                <button type="submit" class="form-gomb button-l margin-b">Bejelentkezés</button>
+                <a class="text-darkyellow" onclick="forRegister()"><small>Regisztráció</small></a>
+            </div>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
+
